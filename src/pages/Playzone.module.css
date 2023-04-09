@@ -1,0 +1,27 @@
+.keyboard{
+   width: 70%;
+   background-color: #262c2c;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(12,1fr);
+   gap: 10px;
+   padding: 20px;
+   border-radius: .5rem;
+   margin-top: 50PX;
+}
+
+.button_key{
+   background-color: #2f3639;
+   border-radius: .5rem;
+   color: #02bdd5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 35px;
+   cursor: pointer;
+}
+
+.button_key:hover{
+   background-color: white;
+   color: black;
+}
