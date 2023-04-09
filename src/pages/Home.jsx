@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addPlayer } from "../redux/action/player.action";
 import axios from "axios";
+import home_wallpaper from "../image/home_wallpaper.jpg"
 
 const initial={
     name:"",
@@ -39,11 +40,11 @@ const Home = () => {
      }
 
   return (
-    <Box>
+    <Box w={"100%"} h={"100vh"} backgroundImage={home_wallpaper} backgroundRepeat={"no-repeat"} backgroundPosition={"center"} backgroundSize={"cover"}>
 
-        <Container mt={"10%"} p="20px" boxShadow="rgba(3, 102, 214, 0.3) 0px 0px 0px 3px">
+        <Container >
             <Heading textAlign={"center"} color="yellow.800" mb={"20px"}>START THE GAME</Heading>
-      <FormControl>
+      <FormControl mt={"10%"} p="20px" boxShadow="rgba(3, 102, 214, 0.3) 0px 0px 0px 3px" >
         <FormLabel>Name</FormLabel>
         <Input type="text" border={"transparent"} borderBottom="1px solid black" borderRadius={"0"} name="name" value={player.name} onChange={handleChange}/>
         <FormLabel>Level</FormLabel>
