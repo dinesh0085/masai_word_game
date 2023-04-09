@@ -43,12 +43,12 @@ const Home = () => {
     <Box w={"100%"} h={"100vh"} backgroundImage={home_wallpaper} backgroundRepeat={"no-repeat"} backgroundPosition={"center"} backgroundSize={"cover"}>
 
         <Container >
-            <Heading textAlign={"center"} color="yellow.800" mb={"20px"}>START THE GAME</Heading>
-      <FormControl mt={"10%"} p="20px" boxShadow="rgba(3, 102, 214, 0.3) 0px 0px 0px 3px" >
+            <Heading textAlign={"center"}  color="white" mb={"20px"}>START THE GAME</Heading>
+      <FormControl borderRadius={"1rem"} bg={"white"} color={"black"} mt={"10%"} p="20px" boxShadow="rgba(3, 102, 214, 0.3) 0px 0px 0px 3px" >
         <FormLabel>Name</FormLabel>
-        <Input type="text" border={"transparent"} borderBottom="1px solid black" borderRadius={"0"} name="name" value={player.name} onChange={handleChange}/>
+        <Input _hover={{borderColor:"teal"}} type="text" border={"transparent"} borderBottom="1px solid black" borderRadius={"0"} name="name" value={player.name} onChange={handleChange}/>
         <FormLabel>Level</FormLabel>
-        <Select placeholder='Select Level' border={"transparent"} borderBottom="1px solid black" borderRadius={"0"}  name="difficulty" value={player.difficulty} onChange={handleChange}>
+        <Select _hover={{borderColor:"teal"}} placeholder='Select Level' border={"transparent"} borderBottom="1px solid black" borderRadius={"0"}  name="difficulty" value={player.difficulty} onChange={handleChange}>
         <option value='High'>High</option>
       <option value='Medium'>Medium</option>
        <option value='Low'>Low</option>
